@@ -1,8 +1,18 @@
 #The work on the prior and posterior distributions follows
 #code given in https://www.r-bloggers.com/gaussian-process-regression-with-r/
 #by James Keirstead
-
-library(GPfit)
+#This code requires the use of the package 'ggplot2', written by Hadley Wickham and Winston Chang, published in 2016.
+#The url for this package is https://cran.r-project.org/web/packages/ggplot2/index.html
+#This code requires the use of the package 'plyr', written by Hadley Wickham, published in 2016.
+#The url for this package is https://cran.r-project.org/web/packages/plyr/index.html
+#This code requires the use of the package 'MASS', written by Brian Ripley et. al., published in 2018.
+#The url for this package is https://cran.r-project.org/web/packages/MASS/MASS.pdf
+#This code requires the use of the package 'reshape2', written by Hadley Wickham.
+#The url for this package is https://cran.r-project.org/web/packages/reshape2/index.html
+#This code requires the use of the package 'gridExtra', written by Baptiste Auguie, published in 2017.
+#The url for this package is https://cran.r-project.org/web/packages/gridExtra/index.html
+#This code requires the use of the package 'mvtnorm', written by Alan Genz et. al., published in 2018.
+#The url for this package is https://cran.r-project.org/web/packages/mvtnorm/index.html
 require(MASS)
 require(mvtnorm)
 
@@ -93,9 +103,7 @@ lstquadfunction = function(x){
   lst=list(Score = ans, Pred = 0)
   return(lst)
 }
-require(rBayesianOptimization)
-QFBGO = BayesianOptimization(lstquadfunction, bounds = list(x=c(-1.8,2.5)),init_points=4
-                             ,n_iter=20,acq="ucb",kappa=2.576,eps=0.0,verbose=TRUE)
+
 variance = diag(cov.f.star)
 f.bar.star <- k.xsx%*%solve(k.xx + sigma.n^2*diag(1, ncol(k.xx)))%*%f$y
 cov.f.star <- k.xsxs - k.xsx%*%solve(k.xx + sigma.n^2*diag(1, ncol(k.xx)))%*%k.xxs
