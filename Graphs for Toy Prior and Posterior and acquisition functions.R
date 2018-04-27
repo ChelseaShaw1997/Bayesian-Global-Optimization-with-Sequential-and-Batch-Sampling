@@ -115,8 +115,6 @@ require(gridExtra)
 
 grid.arrange(fig2b,UCBplot)
 
-require(GPfit)
-?GPfit
 
 #function to divide vectors for PI
 vectordivision = function(mu,var){
