@@ -1,4 +1,4 @@
-#Partially guided by code from
+#Guided by code from
 #http://www.mas.ncl.ac.uk/~ndjw1/teaching/sim/gibbs/gibbs.html
 #which was written by Professor Darren Wilkinson
 
