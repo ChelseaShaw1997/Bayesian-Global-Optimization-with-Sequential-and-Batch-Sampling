@@ -2,7 +2,17 @@
 #code given in https://www.r-bloggers.com/gaussian-process-regression-with-r/
 #by James Keirstead
 
-library(GPfit)
+#This code requires the use of the package 'ggplot2', written by Hadley Wickham and Winston Chang, published in 2016.
+#The url for this package is https://cran.r-project.org/web/packages/ggplot2/index.html
+#This code requires the use of the package 'plyr', written by Hadley Wickham, published in 2016.
+#The url for this package is https://cran.r-project.org/web/packages/plyr/index.html
+#This code requires the use of the package 'MASS', written by Brian Ripley et. al., published in 2018.
+#The url for this package is https://cran.r-project.org/web/packages/MASS/MASS.pdf
+#This code requires the use of the package 'reshape2', written by Hadley Wickham.
+#The url for this package is https://cran.r-project.org/web/packages/reshape2/index.html
+#This code requires the use of the package 'gridExtra', written by Baptiste Auguie, published in 2017.
+#The url for this package is https://cran.r-project.org/web/packages/gridExtra/index.html
+
 require(MASS)
 
 
