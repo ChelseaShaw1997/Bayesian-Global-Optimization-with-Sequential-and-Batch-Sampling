@@ -1,5 +1,7 @@
 #This code uses the package 'GenSA' written by Gubian, S et. al., published in January 2018. 
 #The url for this package is https://cran.r-project.org/web/packages/GenSA/GenSA.pdf
+#This code requires the use of the package 'ggplot2', written by Hadley Wickham and Winston Chang, published in 2016.
+#The url for this package is https://cran.r-project.org/web/packages/ggplot2/index.html
 
 library(GenSA)
 library(ggplot2)
