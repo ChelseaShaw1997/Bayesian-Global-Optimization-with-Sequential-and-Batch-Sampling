@@ -1,6 +1,9 @@
 #The writing of this code was aided by Assistant Proffessor
 #Georgios Karagiannis, Durham University
-
+#This code requires use of the package 'deSolve' written by K. Soetaert, T. Petzoldt and R. Woodrow Setzer, published in 2017.
+#The url for this package is https://cran.r-project.org/web/packages/deSolve/deSolve.pdf
+#This code requires use of the package 'rBayesianOptimization' written by Yachen Yan, published in 2017.
+#The url for this package is https://cran.r-project.org/web/packages/rBayesianOptimization/rBayesianOptimization.pdf
 #The data values and ODE model were found in "HIV dynamics:modeling, data analysis
 #and optimal treatment protocols" by BM Adams et. al., 2005.
 library(deSolve)
@@ -158,9 +161,8 @@ plot(plot.1.var, "xlab" = "Value of Lambda 2","ylab"="Value of Cost Function",pc
 plot.2.var.3d = matrix(cbind(BGO$History[,2],BGO$History[,3],BGO$History[,4]))
 plot.2.var.1 = data.frame(BGO$History[,2],BGO$History[,4])
 plot.2.var.2 = data.frame(BGO$History[,3],BGO$History[,4])
-library(scatterplot3d)
+
 par(mfrow = c(1,2))
-scatterplot3d(plot.2.var.3d,color = 2,pch=3)
 plot(plot.2.var.1, xlab = "Value of Lambda 1",ylab="Value of Cost Function",pch=3)
 plot(plot.2.var.2, xlab = "Value of Lambda 2",ylab="Value of Cost Function",pch=3)
 
