@@ -1,7 +1,8 @@
 #Guided by code from
 #http://www.mas.ncl.ac.uk/~ndjw1/teaching/sim/gibbs/gibbs.html
 #which was written by Professor Darren Wilkinson
-
+#This code requires the use of the package 'MASS', written by Brian Ripley et. al., published in 2018.
+#The url for this package is https://cran.r-project.org/web/packages/MASS/MASS.pdf
 library(MASS)
 
 
