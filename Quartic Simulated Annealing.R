@@ -1,3 +1,6 @@
+#This code uses the package 'GenSA' written by Gubian, S et. al., published in January 2018. 
+#The url for this package is https://cran.r-project.org/web/packages/GenSA/GenSA.pdf
+
 library(GenSA)
 library(ggplot2)
 #GenSA finds the minimum- here we're maximising, so we need the reverse of the quartic function
