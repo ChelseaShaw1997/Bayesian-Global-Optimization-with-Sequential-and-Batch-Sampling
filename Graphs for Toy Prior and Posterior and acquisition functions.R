@@ -7,7 +7,7 @@
 #The url for this package is https://cran.r-project.org/web/packages/plyr/index.html
 #This code requires the use of the package 'MASS', written by Brian Ripley et. al., published in 2018.
 #The url for this package is https://cran.r-project.org/web/packages/MASS/MASS.pdf
-#This code requires the use of the package 'reshape2', written by Hadley Wickham.
+#This code requires the use of the package 'reshape2', written by Hadley Wickham, published in 2017.
 #The url for this package is https://cran.r-project.org/web/packages/reshape2/index.html
 #This code requires the use of the package 'gridExtra', written by Baptiste Auguie, published in 2017.
 #The url for this package is https://cran.r-project.org/web/packages/gridExtra/index.html
